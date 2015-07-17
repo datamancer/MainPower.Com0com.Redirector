@@ -1,0 +1,11 @@
+﻿<Window x:Class="MainPower.Com0com.Redirector.PortConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Port Config" Height="113" Width="192" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow">
+    <Grid>
+        <TextBox Name="txtPortAName" HorizontalAlignment="Left" Height="23" Margin="90,13,0,0" TextWrapping="Wrap" Text="COM10" VerticalAlignment="Top" Width="75" TextChanged="txtPortAName_TextChanged"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="90,41,0,0" VerticalAlignment="Top" Width="75" Click="btnOk_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <Label Content="Port A" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
