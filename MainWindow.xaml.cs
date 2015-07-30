@@ -25,8 +25,14 @@ namespace MainPower.Com0com.Redirector
 
         public MainWindow()
         {
-            
-            PortPairs = Com0comSetup.GetPortPairs();
+            try
+            {
+                PortPairs = Com0comSetup.GetPortPairs();
+            }
+            catch (Exception ex)
+            { 
+                MessageBox.Show(ex.ToString());
+            }
             InitializeComponent();
             cboCommsMode.ItemsSource = Enum.GetValues(typeof(CommsMode));
         }
